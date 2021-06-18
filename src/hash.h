@@ -249,6 +249,43 @@ public:
     }
 };
 
+extern "C" void dvachpower_hash(const char *input, char *output);
+
+class CHashWriter2chpower: public CHashWriter
+{
+private:
+    std::vector<unsigned char> buf;
+
+public:
+
+    CHashWriter2chpower(int nTypeIn, int nVersionIn) : CHashWriter(nTypeIn, nVersionIn) {}
+
+    void write(const char *pch, size_t size) {
+        buf.insert(buf.end(), pch, pch + size);
+    }
+
+    uint256 GetHash() {
+        uint256 result;
+        dvachpower_hash((const char*)buf.data(), (char*)&result);
+        return result;
+    }
+
+    template<typename T>
+    CHashWriter2chpower& operator<<(const T& obj) {
+        // Serialize to this stream
+        ::Serialize(*this, obj);
+        return (*this);
+    }
+};
+
+template<typename T>
+uint256 SerializeHash2chpower(const T& obj, int nType=SER_GETHASH, int nVersion=PROTOCOL_VERSION)
+{
+    CHashWriter2chpower ss(nType, nVersion);
+    ss << obj;
+    return ss.GetHash();
+}
+
 /** Compute the 256-bit hash of an object's serialization. */
 template<typename T>
 uint256 SerializeHash(const T& obj, int nType=SER_GETHASH, int nVersion=PROTOCOL_VERSION)

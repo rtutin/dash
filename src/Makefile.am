@@ -435,7 +435,10 @@ crypto_libdash_crypto_base_a_SOURCES = \
   crypto/sha256.cpp \
   crypto/sha256.h \
   crypto/sha512.cpp \
-  crypto/sha512.h
+  crypto/sha512.h \
+	crypto/2chpower/sha256.c \
+	crypto/2chpower/2chpower-opt.c \
+	crypto/2chpower/2chpower.c
 
 if USE_ASM
 crypto_libdash_crypto_base_a_SOURCES += crypto/sha256_sse4.cpp
