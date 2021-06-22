@@ -13,9 +13,10 @@
 
 uint256 CBlockHeader::GetHash() const
 {
-    uint256 thash;
-    dvachpower_hash(BEGIN(nVersion), BEGIN(thash));
-    return thash;
+    std::vector<unsigned char> vch(80);
+    CVectorWriter ss(SER_GETHASH, PROTOCOL_VERSION, vch, 0);
+    ss << *this;
+    return HashX11((const char *)vch.data(), (const char *)vch.data() + vch.size());
 }
 
 std::string CBlock::ToString() const
