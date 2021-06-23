@@ -312,12 +312,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
-        <translation>Vakava virhe tapahtunut. Dash Core ei voi enää toimia turvallisesti ja sulkeutuu.</translation>
+        <source>A fatal error occurred. 2chcoin Core can no longer continue safely and will quit.</source>
+        <translation>Vakava virhe tapahtunut. 2chcoin Core ei voi enää toimia turvallisesti ja sulkeutuu.</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>2chcoin Core</source>
+        <translation>2chcoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -376,8 +376,8 @@
         <translation>Sulje ohjelma</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
-        <translation>Näytä tietoja Dash Core:sta</translation>
+        <source>Show information about 2chcoin Core</source>
+        <translation>Näytä tietoja 2chcoin Core:sta</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1423,8 +1423,8 @@
         <translation>Haluttu saldo</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avaa automaattisesti Dash Core asiakasohjelmalle portti reitittimeen. Tämä toimii vain jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
+        <source>Automatically open the 2chcoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avaa automaattisesti 2chcoin Core asiakasohjelmalle portti reitittimeen. Tämä toimii vain jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
@@ -4586,8 +4586,8 @@ Vähennä uakommenttien määrää tai kokoa.</translation>
         <translation>katso debug.log lisätietoja.</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>2chcoin Core</source>
+        <translation>2chcoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

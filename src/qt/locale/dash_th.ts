@@ -312,12 +312,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
-        <translation>เกิดข้อผิดพลาดร้ายแรงขึ้น Dash Core ไม่สามารถดำเนินการต่อได้อย่างปลอดภัยและจะออกจากระบบ</translation>
+        <source>A fatal error occurred. 2chcoin Core can no longer continue safely and will quit.</source>
+        <translation>เกิดข้อผิดพลาดร้ายแรงขึ้น 2chcoin Core ไม่สามารถดำเนินการต่อได้อย่างปลอดภัยและจะออกจากระบบ</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>2chcoin Core</source>
+        <translation>2chcoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -376,8 +376,8 @@
         <translation>ออกจากโปรแกรม</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
-        <translation>แสดงข้อมูลเกี่ยวกับ Dash Core</translation>
+        <source>Show information about 2chcoin Core</source>
+        <translation>แสดงข้อมูลเกี่ยวกับ 2chcoin Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1403,8 +1403,8 @@
         <translation>ยอดเงินคงเหลือที่กำหนดไว้ในการทำธุรกรรมแบบ</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>เปิด port ลูกค้าของ Dash Core บนเราเตอร์โดยอัตโนมัติ การทำงานนี้ใช้ได้เฉพาะเมื่อเราเตอร์ของคุณรองรับ UPnP และเปิดใช้งานแล้ว</translation>
+        <source>Automatically open the 2chcoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>เปิด port ลูกค้าของ 2chcoin Core บนเราเตอร์โดยอัตโนมัติ การทำงานนี้ใช้ได้เฉพาะเมื่อเราเตอร์ของคุณรองรับ UPnP และเปิดใช้งานแล้ว</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
@@ -4553,8 +4553,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>ดูรายละเอียดได้ใน debug.log</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>2chcoin Core</source>
+        <translation>2chcoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

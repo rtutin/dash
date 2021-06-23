@@ -312,12 +312,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
-        <translation>Ein kritischer Fehler ist aufgetreten. Dash Core kann nicht mehr ausgeführt werden und wird nun beendet.</translation>
+        <source>A fatal error occurred. 2chcoin Core can no longer continue safely and will quit.</source>
+        <translation>Ein kritischer Fehler ist aufgetreten. 2chcoin Core kann nicht mehr ausgeführt werden und wird nun beendet.</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>2chcoin Core</source>
+        <translation>2chcoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -376,8 +376,8 @@
         <translation>Anwendung beenden</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
-        <translation>Informationen über Dash Core anzeigen</translation>
+        <source>Show information about 2chcoin Core</source>
+        <translation>Informationen über 2chcoin Core anzeigen</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1403,8 +1403,8 @@
         <translation>Guthaben auswählen</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisch den Dash Core Clientport auf dem Router öffnen. Dies funktioniert nur, wenn Ihr Router UPnP unterstützt und dies aktiviert ist.</translation>
+        <source>Automatically open the 2chcoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatisch den 2chcoin Core Clientport auf dem Router öffnen. Dies funktioniert nur, wenn Ihr Router UPnP unterstützt und dies aktiviert ist.</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
@@ -4553,8 +4553,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Details finden Sie in debug.log</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>2chcoin Core</source>
+        <translation>2chcoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

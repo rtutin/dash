@@ -312,12 +312,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. 2chcoin Core can no longer continue safely and will quit.</source>
         <translation>Ocorreu um erro fatal. A Dash não pode mais continuar de forma segura, e irá fechar</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>2chcoin Core</source>
+        <translation>2chcoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -376,8 +376,8 @@
         <translation>Sair da aplicação</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
-        <translation>Exibe informações sobre Dash Core</translation>
+        <source>Show information about 2chcoin Core</source>
+        <translation>Exibe informações sobre 2chcoin Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1403,8 +1403,8 @@
         <translation>Escolher saldo</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abre automaticamente a porta para o cliente Dash Core no roteador. Essa função apenas funciona se o seu roteador oferece suporte a UPnP e a opção estiver habilitada.</translation>
+        <source>Automatically open the 2chcoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abre automaticamente a porta para o cliente 2chcoin Core no roteador. Essa função apenas funciona se o seu roteador oferece suporte a UPnP e a opção estiver habilitada.</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
@@ -4553,8 +4553,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Consulte debug.log para obter detalhes.</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>2chcoin Core</source>
+        <translation>2chcoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

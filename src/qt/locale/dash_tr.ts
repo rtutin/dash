@@ -312,12 +312,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
-        <translation>Kritik bir hata oluştu. Dash Core artık güvenli şekilde devam edemez ve kapanacak.</translation>
+        <source>A fatal error occurred. 2chcoin Core can no longer continue safely and will quit.</source>
+        <translation>Kritik bir hata oluştu. 2chcoin Core artık güvenli şekilde devam edemez ve kapanacak.</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>2chcoin Core</source>
+        <translation>2chcoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -376,8 +376,8 @@
         <translation>Uygulamadan çık</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
-        <translation>Dash Core hakkında bilgileri göster</translation>
+        <source>Show information about 2chcoin Core</source>
+        <translation>2chcoin Core hakkında bilgileri göster</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1403,8 +1403,8 @@
         <translation>Bakiyesi hedefle</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Router'da otomatik olarak Dash Core istemcisi portu aç. Bu sadece router'ınız UPnP destekliyorsa ve etkinse çalışır.</translation>
+        <source>Automatically open the 2chcoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Router'da otomatik olarak 2chcoin Core istemcisi portu aç. Bu sadece router'ınız UPnP destekliyorsa ve etkinse çalışır.</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
@@ -4553,8 +4553,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>ayrıntlar için debug.log dosyasına bakın</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>2chcoin Core</source>
+        <translation>2chcoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

@@ -1,4 +1,4 @@
-Dash Core version 0.17.0.2
+2chcoin Core version 0.17.0.2
 ==========================
 
 Release is now available from:
@@ -30,7 +30,7 @@ or -reindex) to make sure your wallet has all the new data synced. Upgrading
 from version 0.13 should not require any additional actions.
 
 When upgrading from a version prior to 0.14.0.3, the
-first startup of Dash Core will run a migration process which can take a few
+first startup of 2chcoin Core will run a migration process which can take a few
 minutes to finish. After the migration, a downgrade to an older version is only
 possible with a reindex (or reindex-chainstate).
 
@@ -94,7 +94,7 @@ BLS update
 ----------
 Dash Core’s BLS signature library has been updated based on v1.0 of the
 Chia BLS library to support migration to a new BLS signature scheme which will
-be implemented in a future version of DashCore. These changes will be made to
+be implemented in a future version of 2chcoinCore. These changes will be made to
 align with standards and improve security.
 
 Network performance improvements
@@ -132,7 +132,7 @@ Also, enabling wallet encryption no longer requires a wallet restart.
 Sporks
 ------
 Several spork changes have been made to streamline code and improve system
-reliability. Activation of `SPORK_22_PS_MORE_PARTICIPANTS` in DashCore v0.16
+reliability. Activation of `SPORK_22_PS_MORE_PARTICIPANTS` in 2chcoinCore v0.16
 has rendered that spork unnecessary. The associated logic has been hardened
 and the spork removed. `SPORK_21_QUORUM_ALL_CONNECTED` logic has been split
 into two sporks, `SPORK_21_QUORUM_ALL_CONNECTED` and `SPORK_23_QUORUM_POSE`,
@@ -197,7 +197,7 @@ The new RPCs are:
 - `upgradetohd`
 
 The deprecated RPCs are all related to the deprecation of wallet accounts and
-will be removed in DashCore v0.18. Note that the deprecation of wallet accounts
+will be removed in 2chcoinCore v0.18. Note that the deprecation of wallet accounts
 means that any RPCs that previously accepted an “account” parameter are
 affected — please refer to the RPC help for details about specific RPCs.
 

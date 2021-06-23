@@ -312,11 +312,11 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. 2chcoin Core can no longer continue safely and will quit.</source>
         <translation>خطأ فادح حدث . لا يمكن اتمام داش بامان سيتم الخروج</translation>
     </message>
     <message>
-        <source>Dash Core</source>
+        <source>2chcoin Core</source>
         <translation>جوهر الداش</translation>
     </message>
     <message>
@@ -376,7 +376,7 @@
         <translation>الخروج من التطبيق</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
+        <source>Show information about 2chcoin Core</source>
         <translation>أظهر المعلومات حولة داش الأساسية</translation>
     </message>
     <message>
@@ -1319,7 +1319,7 @@
         <translation>الهدف رصيد</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the 2chcoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>فتح منفذ عميل داش كور تلقائيًا على جهاز التوجيه. هذا يعمل فقط عندما يدعم جهاز التوجيه الخاص بك UPnP وتمكينه.</translation>
     </message>
     <message>
@@ -4329,7 +4329,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>انظر debug.log للحصول على التفاصيل.</translation>
     </message>
     <message>
-        <source>Dash Core</source>
+        <source>2chcoin Core</source>
         <translation>جوهر الداش</translation>
     </message>
     <message>

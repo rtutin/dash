@@ -56,7 +56,7 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
-# error "Dash Core cannot be compiled without assertions."
+# error "2chcoin Core cannot be compiled without assertions."
 #endif
 
 #define MICRO 0.000001

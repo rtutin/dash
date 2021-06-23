@@ -264,12 +264,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
-        <translation>重大なエラーが発生しました。 Dash Coreは安全に続行できなくなり終了します。</translation>
+        <source>A fatal error occurred. 2chcoin Core can no longer continue safely and will quit.</source>
+        <translation>重大なエラーが発生しました。 2chcoin Coreは安全に続行できなくなり終了します。</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>2chcoin Core</source>
+        <translation>2chcoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -328,8 +328,8 @@
         <translation>アプリケーションを終了</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
-        <translation>Dash Coreについての情報を表示</translation>
+        <source>Show information about 2chcoin Core</source>
+        <translation>2chcoin Coreについての情報を表示</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1270,8 +1270,8 @@
         <translation>この設定は閾値として機能し、この量に達するとプライベートセンドが無効になります。</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自動的にルーターのDash Core クライアントポートを開放します。これはルーターがUPnP機能をサポートしておりUPnP機能が有効な場合にのみ機能します。</translation>
+        <source>Automatically open the 2chcoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自動的にルーターの2chcoin Core クライアントポートを開放します。これはルーターがUPnP機能をサポートしておりUPnP機能が有効な場合にのみ機能します。</translation>
     </message>
     <message>
         <source>Connect to the Dash network through a SOCKS5 proxy.</source>
@@ -4460,7 +4460,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>RPCサーバのオプション：</translation>
     </message>
     <message>
-        <source>Dash Core</source>
+        <source>2chcoin Core</source>
         <translation>Dashコア</translation>
     </message>
     <message>

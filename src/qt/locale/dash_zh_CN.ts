@@ -312,12 +312,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
-        <translation>发生严重错误。Dash Core钱包不再能安全地运行下去，程序将会关闭。</translation>
+        <source>A fatal error occurred. 2chcoin Core can no longer continue safely and will quit.</source>
+        <translation>发生严重错误。2chcoin Core钱包不再能安全地运行下去，程序将会关闭。</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>2chcoin Core</source>
+        <translation>2chcoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -376,8 +376,8 @@
         <translation>退出程序</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
-        <translation>显示关于Dash Core信息</translation>
+        <source>Show information about 2chcoin Core</source>
+        <translation>显示关于2chcoin Core信息</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1325,8 +1325,8 @@
         <translation>混币循环数</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自动在路由器打开Dash Core客户端端口。此项只在路由器支持UPnP且开启时有效。</translation>
+        <source>Automatically open the 2chcoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自动在路由器打开2chcoin Core客户端端口。此项只在路由器支持UPnP且开启时有效。</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
@@ -4327,8 +4327,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>详细信息请参阅debug.log。</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>2chcoin Core</source>
+        <translation>2chcoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

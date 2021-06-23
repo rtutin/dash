@@ -2116,7 +2116,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Dash Core " + FormatFullVersion();
+        std::string strDesc = "2chcoin Core " + FormatFullVersion();
 
         do {
 #ifndef UPNPDISCOVER_SUCCESS

@@ -1,6 +1,6 @@
 # TOR SUPPORT IN 2CH CORE
 
-It is possible to run Dash Core as a Tor hidden service, and connect to such services.
+It is possible to run 2chcoin Core as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
 distributions default to having a SOCKS proxy listening on port 9050, but others
@@ -9,9 +9,9 @@ See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.html.en#T
 for how to properly configure Tor.
 
 
-## 1. Run Dash Core behind a Tor proxy
+## 1. Run 2chcoin Core behind a Tor proxy
 
-The first step is running Dash Core behind a Tor proxy. This will already make all
+The first step is running 2chcoin Core behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 
 	-proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
@@ -42,24 +42,24 @@ In a typical situation, this suffices to run behind a Tor proxy:
 	./dashd -proxy=127.0.0.1:9050
 
 
-## 2. Run a Dash Core hidden server
+## 2. Run a 2chcoin Core hidden server
 
 If you configure your Tor system accordingly, it is possible to make your node also
 reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equivalent
 config file): *Needed for Tor version 0.2.7.0 and older versions of Tor only. For newer
 versions of Tor see [Section 4](#4-automatically-listen-on-tor).*
 
-	HiddenServiceDir /var/lib/tor/dashcore-service/
+	HiddenServiceDir /var/lib/tor/2chcoincore-service/
 	HiddenServicePort 9999 127.0.0.1:9999
 	HiddenServicePort 19999 127.0.0.1:19999
 
 The directory can be different of course, but (both) port numbers should be equal to
 your dashd's P2P listen port (9999 by default).
 
-	-externalip=X   You can tell Dash Core about its publicly reachable address using
+	-externalip=X   You can tell 2chcoin Core about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
 	                configuration, you can find your onion address in
-	                /var/lib/tor/dashcore-service/hostname. Onion addresses are given
+	                /var/lib/tor/2chcoincore-service/hostname. Onion addresses are given
 	                preference for your node to advertise itself with, for connections
 	                coming from unroutable addresses (such as 127.0.0.1, where the
 	                Tor proxy typically runs).
@@ -97,7 +97,7 @@ for normal IPv4/IPv6 communication, use:
 	./dashd -onion=127.0.0.1:9050 -externalip=ssapp53tmftyjmjb.onion -discover
 
 
-## 3. List of known Dash Core Tor relays
+## 3. List of known 2chcoin Core Tor relays
 
 Note: All these nodes are hosted by masternodehosting.com
 
@@ -117,13 +117,13 @@ Note: All these nodes are hosted by masternodehosting.com
 
 Starting with Tor version 0.2.7.1 it is possible, through Tor's control socket
 API, to create and destroy 'ephemeral' hidden services programmatically.
-Dash Core has been updated to make use of this.
+2chcoin Core has been updated to make use of this.
 
 This means that if Tor is running (and proper authentication has been configured),
-Dash Core automatically creates a hidden service to listen on. This will positively 
+2chcoin Core automatically creates a hidden service to listen on. This will positively 
 affect the number of available .onion nodes.
 
-This new feature is enabled by default if Dash Core is listening (`-listen`), and
+This new feature is enabled by default if 2chcoin Core is listening (`-listen`), and
 requires a Tor connection to work. It can be explicitly disabled with `-listenonion=0`
 and, if not disabled, configured using the `-torcontrol` and `-torpassword` settings.
 To show verbose debugging information, pass `-debug=tor`.
@@ -141,7 +141,7 @@ Tor configuration.
 
 ## 5. Privacy recommendations
 
-- Do not add anything but Dash Core ports to the hidden service created in section 2.
+- Do not add anything but 2chcoin Core ports to the hidden service created in section 2.
   If you run a web service too, create a new hidden service for that.
   Otherwise it is trivial to link them, which may reduce privacy. Hidden
   services created automatically (as in section 3) always have only one port
