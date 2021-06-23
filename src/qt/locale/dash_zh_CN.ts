@@ -235,7 +235,7 @@
         <translation>确认加密钱包</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DASH&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR 2CH&lt;/b&gt;!</source>
         <translation>警告:如果把钱包加​​密后又忘记密码，您就会从此&lt;b&gt;失去所有的Dash&lt;/b&gt;！</translation>
     </message>
     <message>
@@ -1614,7 +1614,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>数量与循环次数：</translation>
     </message>
     <message>
-        <source>0 DASH / 0 Rounds</source>
+        <source>0 2CH / 0 Rounds</source>
         <translation>0 Dash / 0 循环数</translation>
     </message>
     <message>
