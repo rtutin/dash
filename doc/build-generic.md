@@ -4,7 +4,7 @@ Some notes on how to build 2chcoin Core based on the [depends](../depends/README
 
 Note on old build instructions
 ------------------------------
-In the past, the build documentation contained instructions on how to build Dash with system-wide installed dependencies
+In the past, the build documentation contained instructions on how to build 2chcoin with system-wide installed dependencies
 like BerkeleyDB 4.8, boost and Qt. Building this way is considered deprecated and only building with the `depends` prefix
 is supported today.
 
@@ -15,8 +15,8 @@ Building the dependencies and 2chcoin Core requires some essential build tools t
 
 Building dependencies
 ---------------------
-Dash inherited the `depends` folder from Bitcoin, which contains all dependencies required to build Dash. These
-dependencies must be built before Dash can actually be built. To do so, perform the following:
+2chcoin inherited the `depends` folder from Bitcoin, which contains all dependencies required to build 2chcoin. These
+dependencies must be built before 2chcoin can actually be built. To do so, perform the following:
 
 ```bash
 $ cd depends
@@ -28,7 +28,7 @@ This will download and build all dependencies required to build 2chcoin Core. Ca
 the packages are rebuilt which have changed since the last depends build.
 
 It is required to re-run the above commands from time to time when dependencies have been updated or added. If this is
-not done, build failures might occur when building Dash.
+not done, build failures might occur when building 2chcoin.
 
 Please read the [depends](../depends/README.md) documentation for more details on supported hosts and configuration
 options. If no host is specified (as in the above example) when calling `make`, the depends system will default to your

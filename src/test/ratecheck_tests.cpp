@@ -1,8 +1,8 @@
-// Copyright (c) 2014-2020 The Dash Core developers
+// Copyright (c) 2014-2020 The 2chcoin Core developers
 
 #include <governance/governance.h>
 
-#include <test/test_dash.h>
+#include <test/test_2chcoin.h>
 
 #include <boost/test/unit_test.hpp>
 

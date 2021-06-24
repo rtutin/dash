@@ -8,7 +8,7 @@ Running
 ---------------------
 After compiling 2chcoin Core, the benchmarks can be run with:
 
-    src/bench/bench_dash
+    src/bench/bench_2chcoin
 
 The output will look similar to:
 ```
@@ -153,7 +153,7 @@ Help
 ---------------------
 `-?` will print a list of options and exit:
 
-    src/bench/bench_dash -?
+    src/bench/bench_2chcoin -?
 
 Notes
 ---------------------

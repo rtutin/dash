@@ -2,9 +2,9 @@
 
 This issue tracker is only for technical issues related to 2chcoin Core.
 
-General Dash questions and/or support requests and are best directed to the [Dashpay Reddit](https://www.reddit.com/r/dashpay/).
+General 2chcoin questions and/or support requests and are best directed to the [2chcoinpay Reddit](https://www.reddit.com/r/2chcoinpay/).
 
-To report critical security issues, email infosec@dash.org and/or see the DASH bug bounty program on [Bugcrowd](https://bugcrowd.com/2chcoindigitalcash) instead of creating Github issues.
+To report critical security issues, email infosec@2chcoin.org and/or see the 2chcoin bug bounty program on [Bugcrowd](https://bugcrowd.com/2chcoindigitalcash) instead of creating Github issues.
 
 ### Describe the issue
 

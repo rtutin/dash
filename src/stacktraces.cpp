@@ -1,9 +1,9 @@
-// Copyright (c) 2014-2021 The Dash Core developers
+// Copyright (c) 2014-2021 The 2chcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/dash-config.h>
+#include <config/2chcoin-config.h>
 #endif // HAVE_CONFIG_H
 
 #include <stacktraces.h>
@@ -422,7 +422,7 @@ static std::string GetCrashInfoStrNoDebugInfo(crash_info ci)
     CDataStream ds(SER_DISK, 0);
 
     crash_info_header hdr;
-    hdr.magic = "DashCrashInfo";
+    hdr.magic = "2chcoinCrashInfo";
     hdr.version = 1;
     hdr.exeFileName = g_exeFileBaseName;
     ds << hdr;
@@ -458,7 +458,7 @@ std::string GetCrashInfoStrFromSerializedStr(const std::string& ciStr)
         return "Error while deserializing crash info header";
     }
 
-    if (hdr.magic != "DashCrashInfo") {
+    if (hdr.magic != "2chcoinCrashInfo") {
         return "Invalid magic string";
     }
     if (hdr.version != 1) {

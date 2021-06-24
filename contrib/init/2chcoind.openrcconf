@@ -1,0 +1,33 @@
+# /etc/conf.d/2chcoind: config file for /etc/init.d/2chcoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/2chcoincore/2chcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/2chcoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/2chcoind.pid"
+
+# Where to write 2chcoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/2chcoind"
+
+# User and group to own 2chcoind process
+#BITCOIND_USER="2chcoincore"
+#BITCOIND_GROUP="2chcoincore"
+
+# Path to 2chcoind executable
+#BITCOIND_BIN="/usr/bin/2chcoind"
+
+# Nice value to run 2chcoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BITCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for 2chcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=60

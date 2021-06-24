@@ -102,7 +102,7 @@ public:
         vOutpoints.assign(setSelected.begin(), setSelected.end());
     }
 
-    // Dash-specific helpers
+    // 2chcoin-specific helpers
 
     void UseCoinJoin(bool fUseCoinJoin)
     {

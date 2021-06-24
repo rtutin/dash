@@ -45,7 +45,7 @@ Follow the instructions in [build-generic](build-generic.md)
 
 Security
 --------
-To help make your Dash installation more secure by making certain attacks impossible to
+To help make your 2chcoin installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, binaries are hardened by default.
 This can be disabled with:
 
@@ -69,7 +69,7 @@ Hardening enables the following features:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-    	scanelf -e ./dashd
+    	scanelf -e ./2chcoind
 
     The output should contain:
 
@@ -84,7 +84,7 @@ Hardening enables the following features:
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./dashd`
+    `scanelf -e ./2chcoind`
 
     the output should contain:
 	STK/REL/PTL

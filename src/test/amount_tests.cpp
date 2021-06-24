@@ -4,7 +4,7 @@
 
 #include <amount.h>
 #include <policy/feerate.h>
-#include <test/test_dash.h>
+#include <test/test_2chcoin.h>
 
 #include <boost/test/unit_test.hpp>
 
@@ -93,7 +93,7 @@ BOOST_AUTO_TEST_CASE(BinaryOperatorTest)
     BOOST_CHECK(a <= a);
     BOOST_CHECK(b >= a);
     BOOST_CHECK(b >= b);
-    // a should be 0.00000002 DASH/kB now
+    // a should be 0.00000002 2chcoin/kB now
     a += a;
     BOOST_CHECK(a == b);
 }

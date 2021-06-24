@@ -1,35 +1,35 @@
 2chcoin Core
 ==========
 
-This is the official reference wallet for Dash digital currency and comprises the backbone of the Dash peer-to-peer network. You can [download 2chcoin Core](https://www.dash.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for 2chcoin digital currency and comprises the backbone of the 2chcoin peer-to-peer network. You can [download 2chcoin Core](https://www.2chcoin.org/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Dash on your native platform.
+The following are some helpful notes on how to run 2chcoin on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/dash-qt` (GUI) or
-- `bin/dashd` (headless)
+- `bin/2chcoin-qt` (GUI) or
+- `bin/2chcoind` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run dash-qt.exe.
+Unpack the files into a directory, and then run 2chcoin-qt.exe.
 
 ### OS X
 
-Drag Dash-Qt to your applications folder, and then run Dash-Qt.
+Drag 2chcoin-Qt to your applications folder, and then run 2chcoin-Qt.
 
 ### Need Help?
 
-* See the [Dash documentation](https://docs.dash.org)
+* See the [2chcoin documentation](https://docs.2chcoin.org)
 for help and more information.
-* See the [Dash Developer Documentation](https://dash-docs.github.io/) 
+* See the [2chcoin Developer Documentation](https://2chcoin-docs.github.io/) 
 for technical specifications and implementation details.
-* Ask for help on [Dash Nation Discord](http://dashchat.org)
-* Ask for help on the [Dash Forum](https://dash.org/forum)
+* Ask for help on [2chcoin Nation Discord](http://2chcoinchat.org)
+* Ask for help on the [2chcoin Forum](https://2chcoin.org/forum)
 
 Building
 ---------------------
@@ -59,8 +59,8 @@ The 2chcoin Core repo's [root README](/README.md) contains relevant information 
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [Dash Forum](https://dash.org/forum), in the Development & Technical Discussion board.
-* Discuss on [Dash Nation Discord](http://dashchat.org)
+* Discuss on the [2chcoin Forum](https://2chcoin.org/forum), in the Development & Technical Discussion board.
+* Discuss on [2chcoin Nation Discord](http://2chcoinchat.org)
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

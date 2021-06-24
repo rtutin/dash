@@ -10,8 +10,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between dash-cli and dashd)
- * of a given instance of the Dash system.
+ * CBaseChainParams defines the base parameters (shared between 2chcoin-cli and 2chcoind)
+ * of a given instance of the 2chcoin system.
  */
 class CBaseChainParams
 {

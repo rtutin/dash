@@ -1,0 +1,44 @@
+# It is not recommended to modify this file in-place, because it will
+# be overwritten during package upgrades. If you want to add further
+# options or overwrite existing ones then use
+# $ systemctl edit 2chcoind.service
+# See "man systemd.service" for details.
+
+# Note that almost all daemon options could be specified in
+# /etc/2chcoin/2chcoin.conf
+
+[Unit]
+Description=2chcoin daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/2chcoind -daemon -conf=/etc/2chcoin/2chcoin.conf -pid=/run/2chcoind/2chcoind.pid
+# Creates /run/2chcoin owned by 2chcoincore
+RuntimeDirectory=2chcoind
+User=2chcoincore
+Type=forking
+PIDFile=/run/2chcoind/2chcoind.pid
+Restart=on-failure
+
+# Hardening measures
+####################
+
+# Provide a private /tmp and /var/tmp.
+PrivateTmp=true
+
+# Mount /usr, /boot/ and /etc read-only for the process.
+ProtectSystem=full
+
+# Disallow the process and all of its children to gain
+# new privileges through execve().
+NoNewPrivileges=true
+
+# Use a new /dev namespace only populated with API pseudo devices
+# such as /dev/null, /dev/zero and /dev/random.
+PrivateDevices=true
+
+# Deny the creation of writable and executable memory mappings.
+MemoryDenyWriteExecute=true
+
+[Install]
+WantedBy=multi-user.target

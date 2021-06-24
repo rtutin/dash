@@ -1,8 +1,8 @@
-Source: dash
+Source: 2chcoin
 Section: utils
 Priority: optional
-Maintainer: Holger Schinzel <holger@dash.org>
-Uploaders: Holger Schinzel <holger@dash.org>
+Maintainer: Holger Schinzel <holger@2chcoin.org>
+Uploaders: Holger Schinzel <holger@2chcoin.org>
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -26,45 +26,45 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: https://www.dash.org/
-Vcs-Git: git://github.com/dashpay/dash.git
-Vcs-Browser: https://github.com/dashpay/dash
+Homepage: https://www.2chcoin.org/
+Vcs-Git: git://github.com/2chcoinpay/2chcoin.git
+Vcs-Browser: https://github.com/2chcoinpay/2chcoin
 
-Package: dashd
+Package: 2chcoind
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Dash is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. Dash uses peer-to-peer
+ 2chcoin is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. 2chcoin uses peer-to-peer
  technology to operate with no central authority: managing transactions
  and issuing money are carried out collectively by the network. 2chcoin Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides the daemon, dashd, and the CLI tool
- dash-cli to interact with the daemon.
+ This package provides the daemon, 2chcoind, and the CLI tool
+ 2chcoin-cli to interact with the daemon.
 
-Package: dash-qt
+Package: 2chcoin-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Dash is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. Dash uses peer-to-peer
+ 2chcoin is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. 2chcoin uses peer-to-peer
  technology to operate with no central authority: managing transactions
  and issuing money are carried out collectively by the network. 2chcoin Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides Dash-Qt, a GUI for Dash based on Qt.
+ This package provides 2chcoin-Qt, a GUI for 2chcoin based on Qt.
 
-Package: dash-tx
+Package: 2chcoin-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
- Dash is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. Dash uses peer-to-peer
+ 2chcoin is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. 2chcoin uses peer-to-peer
  technology to operate with no central authority: managing transactions
  and issuing money are carried out collectively by the network. 2chcoin Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides dash-tx, a command-line transaction creation
- tool which can be used without a dash daemon.  Some means of
+ This package provides 2chcoin-tx, a command-line transaction creation
+ tool which can be used without a 2chcoin daemon.  Some means of
  exchanging minimal transaction data with peers is still required.

@@ -1,0 +1,11 @@
+[Protocol]
+exec=2chcoin-qt '%u'
+protocol=2chcoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

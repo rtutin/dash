@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: 2chcoin Core
-Upstream-Contact: 2chcoin Core Group, Inc https://www.dash.org/team/
-Source: https://github.com/dashpay/dash
+Upstream-Contact: 2chcoin Core Group, Inc https://www.2chcoin.org/team/
+Source: https://github.com/2chcoinpay/2chcoin
 
 Files: *
 Copyright: 2009-2017, Bitcoin Core Developers,
@@ -9,7 +9,7 @@ Copyright: 2009-2017, Bitcoin Core Developers,
 License: Expat
 Comment: The Bitcoin Core Developers encompasses the current developers listed on bitcoin.org,
          as well as the numerous contributors to the project. The 2chcoin Core Developers
-         encompasses the current developers listed on https://www.dash.org/team/, as well as
+         encompasses the current developers listed on https://www.2chcoin.org/team/, as well as
          the numerous contributors to the project.
 
 Files: debian/*

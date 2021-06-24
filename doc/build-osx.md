@@ -38,15 +38,15 @@ Next, follow the instructions in [build-generic](build-generic.md)
 Running
 -------
 
-2chcoin Core is now available at `./src/dashd`
+2chcoin Core is now available at `./src/2chcoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=dashrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/2chcoinCore/dash.conf"
+    echo -e "rpcuser=2chcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/2chcoinCore/2chcoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/2chcoinCore/dash.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/2chcoinCore/2chcoin.conf"
 
-The first time you run dashd, it will start downloading the blockchain. This process could take several hours.
+The first time you run 2chcoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
@@ -55,6 +55,6 @@ You can monitor the download process by looking at the debug.log file:
 Other commands:
 -------
 
-    ./src/dashd -daemon # Starts the dash daemon.
-    ./src/dash-cli --help # Outputs a list of command-line options.
-    ./src/dash-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/2chcoind -daemon # Starts the 2chcoin daemon.
+    ./src/2chcoin-cli --help # Outputs a list of command-line options.
+    ./src/2chcoin-cli help # Outputs a list of RPC commands when the daemon is running.

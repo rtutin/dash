@@ -2,7 +2,7 @@ Cross-compiliation of 2chcoin Core
 ===============================
 
 2chcoin Core can be cross-compiled on Linux to all other supported host systems. This is done by changing
-the `HOST` parameter when building the dependencies and then specifying another `--prefix` directory when building Dash.
+the `HOST` parameter when building the dependencies and then specifying another `--prefix` directory when building 2chcoin.
 
 The following instructions are only tested on Debian Stretch and Ubuntu Bionic.
 
@@ -58,8 +58,8 @@ If you want to build the windows installer with `make deploy` you need [NSIS](ht
 
 Acquire the source in the usual way:
 
-    git clone https://github.com/dashpay/dash.git
-    cd dash
+    git clone https://github.com/2chcoinpay/2chcoin.git
+    cd 2chcoin
 
 ### Building for 64-bit Windows
 
@@ -74,7 +74,7 @@ Ubuntu Bionic 18.04 <sup>[1](#footnote1)</sup>:
 Once the toolchain is installed the build steps are common:
 
 Note that for WSL the 2chcoin Core source path MUST be somewhere in the default mount file system, for
-example /usr/src/dash, AND not under /mnt/d/. If this is not the case the dependency autoconf scripts will fail.
+example /usr/src/2chcoin, AND not under /mnt/d/. If this is not the case the dependency autoconf scripts will fail.
 This means you cannot use a directory that is located directly on the host Windows file system to perform the build.
 
 Build using:

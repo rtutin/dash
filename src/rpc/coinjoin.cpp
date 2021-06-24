@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2021 The Dash Core developers
+// Copyright (c) 2019-2021 The 2chcoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -164,10 +164,10 @@ UniValue getcoinjoininfo(const JSONRPCRequest& request)
 static const CRPCCommand commands[] =
     { //  category              name                      actor (function)         argNames
         //  --------------------- ------------------------  ---------------------------------
-        { "dash",               "getpoolinfo",            &getpoolinfo,            {} },
-        { "dash",               "getcoinjoininfo",        &getcoinjoininfo,        {} },
+        { "2chcoin",               "getpoolinfo",            &getpoolinfo,            {} },
+        { "2chcoin",               "getcoinjoininfo",        &getcoinjoininfo,        {} },
 #ifdef ENABLE_WALLET
-        { "dash",               "coinjoin",               &coinjoin,               {} },
+        { "2chcoin",               "coinjoin",               &coinjoin,               {} },
 #endif // ENABLE_WALLET
 };
 

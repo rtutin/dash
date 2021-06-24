@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=2chcoin Core
+Comment=2chcoin P2P Cryptocurrency
+Comment[de]=Verbinde mit dem 2chcoin peer-to-peer Netzwerk
+Comment[fr]=2chcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=2chcoin, eşten eşe kriptografik sanal para birimi
+Exec=2chcoin-qt %u
+Terminal=false
+Type=Application
+Icon=2chcoin128
+MimeType=x-scheme-handler/2chcoin;
+Categories=Office;Finance;
+StartupWMClass=2chcoin-qt

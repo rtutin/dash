@@ -1,5 +1,5 @@
 ---
-name: "dash-dmg-signer"
+name: "2chcoin-dmg-signer"
 suites:
 - "bionic"
 architectures:
@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/dashpay/dash-detached-sigs.git"
+- "url": "https://github.com/2chcoinpay/2chcoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "2chcoincore-osx-unsigned.tar.gz"

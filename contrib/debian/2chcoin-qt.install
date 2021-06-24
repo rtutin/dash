@@ -1,0 +1,6 @@
+usr/local/bin/2chcoin-qt usr/bin
+share/pixmaps/2chcoin32.xpm usr/share/pixmaps
+share/pixmaps/2chcoin16.xpm usr/share/pixmaps
+share/pixmaps/2chcoin128.png usr/share/pixmaps
+debian/2chcoin-qt.desktop usr/share/applications
+debian/2chcoin-qt.protocol usr/share/kde4/services/
