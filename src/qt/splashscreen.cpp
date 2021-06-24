@@ -64,7 +64,7 @@ SplashScreen::SplashScreen(interfaces::Node& node, Qt::WindowFlags f, const Netw
 
     // Adjust logo color based on the current theme
     QImage imgLogo = pixmapLogo.toImage().convertToFormat(QImage::Format_ARGB32);
-    QColor logoColor = GUIUtil::getThemedQColor(GUIUtil::ThemedColor::BLUE);
+    QColor logoColor = GUIUtil::getThemedQColor(GUIUtil::ThemedColor::ORANGE);
     for (int x = 0; x < imgLogo.width(); ++x) {
         for (int y = 0; y < imgLogo.height(); ++y) {
             const QRgb rgb = imgLogo.pixel(x, y);
