@@ -374,8 +374,8 @@ public:
         consensus.nBudgetPaymentsStartBlock = 2; // actual historical value
         consensus.nBudgetPaymentsCycleBlocks = 16616; // ~(60*24*30)/2.6, actual number of blocks per month is 200700 / 12 = 16725
         consensus.nBudgetPaymentsWindowBlocks = 100;
-        consensus.nSuperblockStartBlock = 614820; // The block at which 12.1 goes live (end of final 12.0 budget cycle)
-        consensus.nSuperblockStartHash = uint256S("0000000000020cb27c7ef164d21003d5d20cdca2f54dd9a9ca6d45f4d47f8aa3");
+        consensus.nSuperblockStartBlock = 3; // The block at which 12.1 goes live (end of final 12.0 budget cycle)
+//        consensus.nSuperblockStartHash = uint256S("0000000000020cb27c7ef164d21003d5d20cdca2f54dd9a9ca6d45f4d47f8aa3");
         consensus.nSuperblockCycle = 16616; // ~(60*24*30)/2.6, actual number of blocks per month is 200700 / 12 = 16725
         consensus.nGovernanceMinQuorum = 10;
         consensus.nGovernanceFilterElements = 20000;
@@ -394,8 +394,8 @@ public:
         consensus.nPowTargetSpacing = 2.5 * 60; // 2chcoin: 2.5 minutes
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
-        consensus.nPowKGWHeight = 15200;
-        consensus.nPowDGWHeight = 34140;
+        consensus.nPowKGWHeight = 0;
+        consensus.nPowDGWHeight = 0;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
@@ -477,12 +477,6 @@ public:
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x001374ee47d4df05bf8a8c1de67ec5742c7be7320b77f5c3c9a1f4f5bd239666"));
         assert(genesis.hashMerkleRoot == uint256S("0x9f7532ef65798969811f269c557be537c7e2b8c82f92834efe97b8ad16ea569a"));
-// x11
-//        genesis = CreateGenesisBlock(1624375058, 189, 0x1f7fffff, 1, 50 * COIN);
-////        MineGenesis(genesis, consensus.powLimit, true);
-//        consensus.hashGenesisBlock = genesis.GetHash();
-//        assert(consensus.hashGenesisBlock == uint256S("0x006327aefea2855b1b8d8c3a5e6352d504cfdd163e0fd9195f7c2f1025647628"));
-//        assert(genesis.hashMerkleRoot == uint256S("0xe0028eb9648db56b1ac77cf090b99048a8007e2bb64b68f092c03c7f56a662c7"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
@@ -492,10 +486,10 @@ public:
         // vSeeds.emplace_back("dnsseed.2chcoin.org");
         // vSeeds.emplace_back("dnsseed.2chcoindot.io");
 
-        // 2chcoin addresses start with 'X'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,76);
+        // 2chcoin addresses start with '2'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,3);
         // 2chcoin script addresses start with '7'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,16);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,30);
         // 2chcoin private keys start with '7' or 'X'
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,204);
         // 2chcoin BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
@@ -503,8 +497,8 @@ public:
         // 2chcoin BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
-        // 2chcoin BIP44 coin type is '5'
-        nExtCoinType = 5;
+        // 2chcoin BIP44 coin type is '720'
+        nExtCoinType = 720;
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
@@ -529,7 +523,7 @@ public:
         nPoolMaxParticipants = 20;
         nFulfilledRequestExpireTime = 60*60; // fulfilled requests expire in 1 hour
 
-        vSporkAddresses = {"Xgtyuk76vhuFW2iT7UAiHgNdWXCf3J34wh"};
+        vSporkAddresses = {"2DcjYaab395ijcuuuc1mdLuteLRcJtzv12"};
         nMinSporkKeys = 1;
         fBIP9CheckMasternodesUpgraded = true;
 
