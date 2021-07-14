@@ -391,7 +391,7 @@ public:
         consensus.DIP0008Height = 2; // 00000000000000112e41e4b3afda8b233b8cc07c532d2eac5de097b68358c43e
         consensus.powLimit = uint256S("00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
         consensus.nPowTargetTimespan = 24 * 60 * 60; // 2chcoin: 1 day
-        consensus.nPowTargetSpacing = 2.5 * 60; // 2chcoin: 2.5 minutes
+        consensus.nPowTargetSpacing = 1; // 2chcoin: 2.5 minutes
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nPowKGWHeight = 0;
@@ -513,10 +513,10 @@ public:
 
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
-        fRequireRoutableExternalIP = true;
+        fRequireRoutableExternalIP = false;
         fMineBlocksOnDemand = false;
         fAllowMultipleAddressesFromGroup = false;
-        fAllowMultiplePorts = false;
+        fAllowMultiplePorts = true;
         nLLMQConnectionRetryTimeout = 60;
 
         nPoolMinParticipants = 3;
