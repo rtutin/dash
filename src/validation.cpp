@@ -1133,38 +1133,38 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
     double dDiff;
     CAmount nSubsidyBase;
 
-    if (nPrevHeight <= 4500 && Params().NetworkIDString() == CBaseChainParams::MAIN) {
-        /* a bug which caused diff to not be correctly calculated */
-        dDiff = (double)0x0000ffff / (double)(nPrevBits & 0x00ffffff);
-    } else {
-        dDiff = ConvertBitsToDouble(nPrevBits);
-    }
+//    if (nPrevHeight <= 4500 && Params().NetworkIDString() == CBaseChainParams::MAIN) {
+//        /* a bug which caused diff to not be correctly calculated */
+//        dDiff = (double)0x0000ffff / (double)(nPrevBits & 0x00ffffff);
+//    } else {
+//        dDiff = ConvertBitsToDouble(nPrevBits);
+//    }
+//
+//    if (nPrevHeight < 5465) {
+//        // Early ages...
+//        // 1111/((x+1)^2)
+//        nSubsidyBase = (1111.0 / (pow((dDiff+1.0),2.0)));
+//        if(nSubsidyBase > 500) nSubsidyBase = 500;
+//        else if(nSubsidyBase < 1) nSubsidyBase = 1;
+//    } else if (nPrevHeight < 17000 || (dDiff <= 75 && nPrevHeight < 24000)) {
+//        // CPU mining era
+//        // 11111/(((x+51)/6)^2)
+//        nSubsidyBase = (11111.0 / (pow((dDiff+51.0)/6.0,2.0)));
+//        if(nSubsidyBase > 500) nSubsidyBase = 500;
+//        else if(nSubsidyBase < 25) nSubsidyBase = 25;
+//    } else {
+//        // GPU/ASIC mining era
+//        // 2222222/(((x+2600)/9)^2)
+//        nSubsidyBase = (2222222.0 / (pow((dDiff+2600.0)/9.0,2.0)));
+//        if(nSubsidyBase > 25) nSubsidyBase = 25;
+//        else if(nSubsidyBase < 5) nSubsidyBase = 5;
+//    }
 
-    if (nPrevHeight < 5465) {
-        // Early ages...
-        // 1111/((x+1)^2)
-        nSubsidyBase = (1111.0 / (pow((dDiff+1.0),2.0)));
-        if(nSubsidyBase > 500) nSubsidyBase = 500;
-        else if(nSubsidyBase < 1) nSubsidyBase = 1;
-    } else if (nPrevHeight < 17000 || (dDiff <= 75 && nPrevHeight < 24000)) {
-        // CPU mining era
-        // 11111/(((x+51)/6)^2)
-        nSubsidyBase = (11111.0 / (pow((dDiff+51.0)/6.0,2.0)));
-        if(nSubsidyBase > 500) nSubsidyBase = 500;
-        else if(nSubsidyBase < 25) nSubsidyBase = 25;
-    } else {
-        // GPU/ASIC mining era
-        // 2222222/(((x+2600)/9)^2)
-        nSubsidyBase = (2222222.0 / (pow((dDiff+2600.0)/9.0,2.0)));
-        if(nSubsidyBase > 25) nSubsidyBase = 25;
-        else if(nSubsidyBase < 5) nSubsidyBase = 5;
-    }
+    CAmount nSubsidy = 10 * COIN;
 
-    CAmount nSubsidy = nSubsidyBase * COIN;
-
-    // yearly decline of production by ~7.1% per year, projected ~18M coins max by year 2050+.
+    // yearly decline of production by ~10% per year, projected ~18M coins max by year 2050+.
     for (int i = consensusParams.nSubsidyHalvingInterval; i <= nPrevHeight; i += consensusParams.nSubsidyHalvingInterval) {
-        nSubsidy -= nSubsidy/14;
+        nSubsidy -= nSubsidy/10;
     }
 
     // this is only active on devnets
