@@ -4,7 +4,7 @@ int dvachpower_hash(const char *input, char *output)
 {
 	yespower_params_t params = {
 		.version = YESPOWER_1_0,
-		.N = 4096,
+		.N = 2048,
 		.r = 32,
 		.pers = "Cryptoautistic algorithm",
 		.perslen = 24
